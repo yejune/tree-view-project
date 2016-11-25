@@ -1,0 +1,90 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@font-face {
+	font-family: 'peanut';
+	font-weight: normal;
+	font-style : normal;
+	src        : url("atom://tree-view-project/styles/font/peanut.woff2") format("woff2");
+}
+
+.tree-view {
+	//background-color: #111111 !important;
+}
+
+.list-group .selected::before,
+.list-tree .selected::before {
+	background-color: #444;
+}
+
+.tree-view-open-files {
+	.list-tree > .list-nested-item > .list-item {
+		line-height: 25px !important;
+	}
+
+	.close-open-file {
+		padding-top   : 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+.tree-view-project {
+	.icon-project-edit,
+	.icon-project-refresh {
+		background : transparent;
+		border     : 0;
+		padding    : 0;
+		float      : right;
+		margin-left: 5px;
+	}
+
+	.icon-project-edit:hover,
+	.icon-project-refresh:hover {
+		color: white;
+	}
+
+	.icon-project-edit::before,
+	.icon-project-refresh::before {
+		font-size             : 10px;
+		margin-right          : 0;
+		width                 : 10px;
+		height                : 10px;
+		font-family           : "peanut";
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.icon-project-edit::before {
+		content: '\e802';
+	}
+
+	.icon-project-refresh::before {
+		content: "\e803";
+	}
+
+	> .list-tree {
+		width        : 100%;
+		overflow     : auto;
+		padding-left : 5px;
+		padding-right: 10px;
+	}
+	background-color: #222 !important;
+	overflow        : auto;
+	flex            : 0 0 1;
+	position        : relative;
+	order           : 0;
+	border-bottom   : 1px solid #000;
+}
+
+.tree-view-resizer .tree-view-scroller {
+	flex    : 1 1;
+	height  : 100%;
+	overflow: auto;
+	position: relative;
+
+	.tree-view {
+		height    : auto;
+		min-height: inherit;
+	}
+}

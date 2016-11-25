@@ -1,0 +1,48 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle tree-view-project",
+        "command": "tree-view-project:toggle"
+      }
+    ],
+    ".tree-view .directory > .header > .name": [
+      {
+        "label": "Add Project",
+        "command": "tree-view-project:addProject"
+      }
+    ],
+    ".tree-view-project .list-tree .file > .name": [
+      {
+        "label": "Delele Project",
+        "command": "tree-view-project:deleteProject"
+      }
+    ],
+    ".tree-view-project .list-tree .list-item > .icon-gift": [
+      {
+        "label": "Edit Projects file",
+        "command": "tree-view-project:editProjects"
+      },
+      {
+        "label": "Reload Projects list",
+        "command": "tree-view-project:refreshProject"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "tree-view-project",
+          "submenu": [
+              {
+                "label": "Toggle",
+                "command": "tree-view-project:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
