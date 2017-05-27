@@ -1,7 +1,7 @@
 {
   "name": "tree-view-project",
   "main": "./lib/tree-view-project",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "A short description of your package",
   "keywords": [],
   "repository": "https://github.com/yejune/tree-view-project",
